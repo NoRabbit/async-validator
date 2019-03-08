@@ -70,6 +70,7 @@ const types = {
  *  @param options.messages The validation messages.
  */
 function type(rule, value, source, errors, options) {
+  console.log('rule/type/type()', rule, value, source, errors, options);
   if (rule.required && value === undefined) {
     required(rule, value, source, errors, options);
     return;
